@@ -1,10 +1,14 @@
 function konversiMenit(menit) {
   // you can only write your code here!
- if(menit % 60 >= 10){
-   return Math.floor(menit / 60) + ':' + menit % 60
- }else if(menit % 60 < 10){
-   return Math.floor(menit/60) + ':0' + menit% 60
- }  
+  var jam = Math.floor(menit / 60);
+  var sisa = menit % 60;
+
+  if(sisa < 10){
+      sisa = '0'+ sisa
+  }
+
+  return `${jam}:${sisa} `
+  
 }
 
 // TEST CASES

@@ -1,8 +1,8 @@
 function balikKata(kata) {
   // you can only write your code here!
   let temp = '';
-  for(let i = kata.length - 1; i >= 0; i-- ){
-    temp += kata[i]
+  for(let i = 0; i < kata.length; i++ ){
+     temp = kata[i] + temp
   }
   return temp
 }

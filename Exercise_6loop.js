@@ -31,14 +31,18 @@ for(var i = 20; i > 0; i--){
 console.log('\n');
 
 let counter = 1
+
 while(counter <= 100){
+  let statement = `${counter} adalah bilangan `
   if(counter % 2 == 0){
-    console.log(`${counter} adalah bilangan GENAP`);
-    counter ++
-  }else if(counter % 2 == 1){
-    console.log(`${counter} adalah bilangan GANJIL`);
-    counter ++
+    statement += 'GENAP'
+    
+  }else {
+    statement += 'GANJIL';
   }
+  console.log(statement);
+  counter ++ 
+  
 }
 console.log('\n');
 console.log('------- PERTAMBAHAN COUNTER 2 KELIPATAN 3 ---------');

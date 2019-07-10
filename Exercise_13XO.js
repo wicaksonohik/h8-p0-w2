@@ -10,11 +10,7 @@ function xo(str) {
       countO ++
     }
   }
-  if(countX == countO){
-    return true
-  }else{
-    return false
-  }
+     return countX === countO
 }
 
 // TEST CASES

@@ -4,18 +4,16 @@ for(var i = 1; i <= row1; i++){
 }
 console.log('\n');
 
-var row2 = ''
+var row2 = '';
 for(var i = 1; i <= row1; i++){
-  var line = ''
+  var line = '';
   for(var j = 1; j <= row1; j++ ){
-    line += '*'  
+    line += '*';  
   }
-  if(i == row1){
-    row2 += line
+  if(i !== row1){
+    row2 += line + '\n';
     }
-    else{
-     row2 += line + '\n'
-    }  
+   
 }
 console.log(row2);
 console.log('\n');
